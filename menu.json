@@ -1,0 +1,17 @@
+[
+  {
+    "nombre": "Pasta al Pesto",
+    "descripcion": "Deliciosa pasta con salsa pesto y queso parmesano.",
+    "imagen": "img/pasta.jpg"
+  },
+  {
+    "nombre": "Ensalada César",
+    "descripcion": "Fresca ensalada con lechuga, croutons y aderezo César.",
+    "imagen": "img/ensalada.jpg"
+  },
+  {
+    "nombre": "Tiramisú",
+    "descripcion": "Postre italiano tradicional con café y queso mascarpone.",
+    "imagen": "img/postre.jpg"
+  }
+]

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restaurante </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🍽 Restaurante Don Juan</h1>
+  <nav>
+    <a href="#menu">Menú</a>
+    <a href="#historia">Historia</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="menu">
+  <h2>Menú</h2>
+  <div class="productos">
+    <div class="producto">
+      <img src="img/pasta.jpg" alt="Pasta" />
+      <h3>Pasta al Pesto</h3>
+      <p>Deliciosa pasta con salsa pesto y queso parmesano.</p>
+      <button onclick="agregarCarrito('Pasta al Pesto')">Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="img/ensalada.jpg" alt="Ensalada" />
+      <h3>Ensalada César</h3>
+      <p>Fresca ensalada con lechuga, croutons y aderezo César.</p>
+      <button onclick="agregarCarrito('Ensalada César')">Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="img/postre.jpg" alt="Postre" />
+      <h3>Tiramisú</h3>
+      <p>Postre italiano tradicional con café y queso mascarpone.</p>
+      <button onclick="agregarCarrito('Tiramisú')">Agregar al carrito</button>
+    </div>
+  </div>
+</section>
+
+<section id="historia">
+  <h2>Nuestra Historia</h2>
+  <img src="img/chef.jpg" alt="Chef" style="width:150px; border-radius: 50%;" />
+  <p>El chef Juan ha cocinado en 5 países y trae lo mejor de cada cultura a nuestra cocina.</p>
+</section>
+
+<section id="contacto">
+  <h2>Contacto y Pedido</h2>
+  
+  <div id="carrito">
+    <h3>Carrito</h3>
+    <ul id="listaCarrito"></ul>
+    <p id="carritoVacio">No hay productos en el carrito.</p>
+  </div>
+
+  <form id="pedidoForm">
+    <h3>Enviar Pedido</h3>
+    <input type="text" id="nombre" placeholder="Nombre completo" required />
+    <input type="tel" id="telefono" placeholder="Teléfono" required />
+    <textarea id="direccion" placeholder="Dirección de entrega" required></textarea>
+    <button type="submit">Enviar Pedido</button>
+  </form>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
